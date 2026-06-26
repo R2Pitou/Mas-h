@@ -1,5 +1,6 @@
 # Manifesto
-"They're all my children"
+*"They're all my children"*
+
 MAS-H does not judge existing storage.
 
 ## Principles and Laws
