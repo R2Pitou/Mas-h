@@ -40,24 +40,24 @@ flowchart TB
     Gateway["Gateway
     SMB • WebDAV • REST"]
 
-    SAMPO["⚙️ SAMPO
+    SAMPO["SAMPO
     Storage Abstraction Management
     & Policy Orchestrator"]
 
-    Tuoni["📚 Tuoni
+    Tuoni["Tuoni
     Librarian"]
 
-    Seshat["📖 Seshat
-    Catalogue"]
+    Seshat["Seshat
+    Catalogue everything"]
 
-    Boatman["⛴ Boatman
-    Ferryman"]
+    Boatman["Boatman
+    Ferries files"]
 
-    Observer["👁 Observer"]
+    Observer["Observer"]
 
-    Caretaker["🛠 Caretaker"]
+    Caretaker["Caretaker"]
 
-    Storage["💾 Storage Providers
+    Storage["Storage Providers
 
     SSD
     HDD
