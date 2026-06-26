@@ -2,10 +2,10 @@
 
 > *"They're all my children."*
 
-Every filesystem.
-Every storage provider.
-Every forgotten USB stick.
-Every piece of your digital life.
+- Every filesystem.
+- Every storage provider.
+- Every forgotten USB stick.
+- Every piece of your digital life.
 
 MAS-H does not judge existing storage.
 
