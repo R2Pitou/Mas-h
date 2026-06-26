@@ -3,9 +3,9 @@
 > *"They're all my children."*
 
 Every filesystem.
-Every drive.
-Every cloud provider.
+Every storage provider.
 Every forgotten USB stick.
+Every piece of your digital life.
 
 MAS-H does not judge existing storage.
 
