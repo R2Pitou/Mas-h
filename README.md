@@ -33,27 +33,29 @@ MASH abstracts heterogeneous storage providers into a single logical library. Us
 ## High-Level Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
 
     User["👤 User"]
 
     Gateway["Gateway
     SMB • WebDAV • REST"]
 
+    SAMPO["⚙️ SAMPO
+    Storage Abstraction Management
+    & Policy Orchestrator"]
+
     Tuoni["📚 Tuoni
-    The Librarian"]
+    Librarian"]
 
     Seshat["📖 Seshat
     Catalogue"]
 
     Boatman["⛴ Boatman
-    Object Movement"]
+    Ferryman"]
 
-    Observer["👁 Observer
-    Event Detection"]
+    Observer["👁 Observer"]
 
-    Caretaker["🛠 Caretaker
-    Maintenance"]
+    Caretaker["🛠 Caretaker"]
 
     Storage["💾 Storage Providers
 
@@ -65,9 +67,12 @@ flowchart LR
     Other MASH Nodes"]
 
     User --> Gateway
-    Gateway --> Tuoni
 
-    Observer --> Tuoni
+    Gateway --> SAMPO
+
+    Observer --> SAMPO
+
+    SAMPO --> Tuoni
 
     Tuoni --> Seshat
     Tuoni --> Boatman
