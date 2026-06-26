@@ -21,7 +21,71 @@ MASH abstracts heterogeneous storage providers and presents a unified library of
 3. Prefer existing open‑source components.
 4. Keep architecture simple.
 5. Optimise machine performance only after optimising user experience.
+# MASH
+## Memory Abstraction Storage Hypervisor
 
+> A Storage Hypervisor with a Digital Librarian control plane.
+
+MASH abstracts heterogeneous storage providers into a single logical library. Users think about objects, projects and information. MASH thinks about disks, filesystems and replication.
+
+---
+
+## High-Level Architecture
+
+```mermaid
+flowchart LR
+
+    User["👤 User"]
+
+    Gateway["Gateway
+    SMB • WebDAV • REST"]
+
+    Tuoni["📚 Tuoni
+    The Librarian"]
+
+    Seshat["📖 Seshat
+    Catalogue"]
+
+    Boatman["⛴ Boatman
+    Object Movement"]
+
+    Observer["👁 Observer
+    Event Detection"]
+
+    Caretaker["🛠 Caretaker
+    Maintenance"]
+
+    Storage["💾 Storage Providers
+
+    SSD
+    HDD
+    USB
+    GitHub
+    Cloud
+    Other MASH Nodes"]
+
+    User --> Gateway
+    Gateway --> Tuoni
+
+    Observer --> Tuoni
+
+    Tuoni --> Seshat
+    Tuoni --> Boatman
+    Tuoni --> Caretaker
+
+    Boatman --> Storage
+    Observer --> Storage
+    Caretaker --> Storage
+```
+
+## Design Principles
+
+- Storage is an implementation detail.
+- Search comes before folders.
+- Users express intent, not implementation.
+- MASH never makes data less accessible.
+- Existing open-source tools are orchestrated, not replaced.
+- Optimise human time before machine time.
 ## Documentation
 
 - [VISION.md](VISION.md)
