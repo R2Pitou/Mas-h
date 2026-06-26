@@ -1,4 +1,4 @@
-# MASH
+# MAS-H
 
 > **Storage Hypervisor with a Digital Librarian control plane**
 
@@ -6,13 +6,13 @@
 
 Modern operating systems ask users to remember where information is stored.
 
-MASH argues that computers should remember where information is stored.
+MAS-H argues that computers should remember where information is stored.
 
 Humans should remember what they are looking for.
 
 ---
 
-MASH abstracts heterogeneous storage providers and presents a unified library of objects, projects, and relationships to users. It preserves existing files, reduces human cognitive load, and orchestrates existing tools (Everything, Syncthing, Git, etc.) rather than replacing them.
+MAS-H abstracts heterogeneous storage providers and presents a unified library of objects, projects, and relationships to users. It preserves existing files, reduces human cognitive load, and orchestrates existing tools (Everything, Syncthing, Git, etc.) rather than replacing them.
 
 ## Design Priorities
 
@@ -21,7 +21,8 @@ MASH abstracts heterogeneous storage providers and presents a unified library of
 3. Prefer existing open‑source components.
 4. Keep architecture simple.
 5. Optimise machine performance only after optimising user experience.
-# MASH
+
+# MAS-H
 ## Memory Abstraction Storage Hypervisor
 
 > A Storage Hypervisor with a Digital Librarian control plane.
