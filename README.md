@@ -43,7 +43,7 @@ flowchart TB
     SAMPO["SAMPO\nStorage Abstraction Management\n& Policy Orchestrator"]
 
     Tuoni["Tuoni\nReasoning Engine"]
-    Seshat["Seshat\nCatalogue\nObjects • Relationships • History"]
+    Seshat["Seshat\nCatalogue\nObjects \n• Relationships \n• Versions \n• Copies \n• Health \n• Provenance \n• Policies \n• Intent \n• History"]
     Boatman["Boatman\nMoves Objects"]
     Observer["Observer\nPublishes Events"]
     Caretaker["Caretaker\nMaintenance"]
