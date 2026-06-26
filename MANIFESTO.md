@@ -42,7 +42,7 @@ Examples:
 * User: *Keep this hot.*
   Librarian: Places the object on fast storage.
 
-* User: *Find Sunday Short Mix.*
+* User: [*Find Sunday Short Mix 5.*](https://r2pitou.github.io/butthurtsplits/index.html#music)
   Librarian: Finds the object without requiring the user to remember where it lives.
 
 ---
