@@ -1,6 +1,9 @@
 # MAS-H
+## Memory Abstraction Storage Hypervisor
 
-> **Storage Hypervisor with a Digital Librarian control plane**
+> A Storage Hypervisor with a Digital Librarian control plane.
+
+MAS-H abstracts heterogeneous storage providers and presents a unified library of objects, projects, and relationships to users. It preserves existing files, reduces human cognitive load, and orchestrates existing tools (Everything, Syncthing, Git, etc.) rather than replacing them.
 
 **Manifesto**
 
@@ -12,8 +15,6 @@ Humans should remember what they are looking for.
 
 ---
 
-MAS-H abstracts heterogeneous storage providers and presents a unified library of objects, projects, and relationships to users. It preserves existing files, reduces human cognitive load, and orchestrates existing tools (Everything, Syncthing, Git, etc.) rather than replacing them.
-
 ## Design Priorities
 
 1. Preserve user data.
@@ -21,13 +22,6 @@ MAS-H abstracts heterogeneous storage providers and presents a unified library o
 3. Prefer existing open‑source components.
 4. Keep architecture simple.
 5. Optimise machine performance only after optimising user experience.
-
-# MAS-H
-## Memory Abstraction Storage Hypervisor
-
-> A Storage Hypervisor with a Digital Librarian control plane.
-
-MASH abstracts heterogeneous storage providers into a single logical library. Users think about objects, projects and information. MASH thinks about disks, filesystems and replication.
 
 ---
 
@@ -49,7 +43,7 @@ flowchart TB
     Librarian"]
 
     Seshat["Seshat
-    Catalogue everything"]
+    Catalogue Objects & Relationships"]
 
     Boatman["Boatman
     Ferries files"]
@@ -65,7 +59,7 @@ flowchart TB
     USB
     GitHub
     Cloud
-    Other MASH Nodes"]
+    Other MAS-H Nodes"]
 
     User --> Gateway
 
@@ -89,7 +83,7 @@ flowchart TB
 - Storage is an implementation detail.
 - Search comes before folders.
 - Users express intent, not implementation.
-- MASH never makes data less accessible.
+- MAS-H never makes data less accessible.
 - Existing open-source tools are orchestrated, not replaced.
 - Optimise human time before machine time.
 ## Documentation

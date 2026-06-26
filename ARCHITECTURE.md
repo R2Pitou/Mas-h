@@ -1,6 +1,6 @@
 # Architecture
 
-MASH is composed of independent logical services (Staff) that communicate exclusively through events.
+MAS-H is composed of independent logical services (Staff) that communicate exclusively through events.
 
 `
 +-------------------+   Event Bus   +-------------------+
@@ -20,7 +20,7 @@ MASH is composed of independent logical services (Staff) that communicate exclus
 +-------------------+              +-------------------+
 `
 
-- **Single-machine first** – all services run on one host; scaling to multiple machines is optional.
-- **Event-driven** – services publish and subscribe to events defined in EVENTS.md.
+- **Single-machine first** â€“ all services run on one host; scaling to multiple machines is optional.
+- **Event-driven** â€“ services publish and subscribe to events defined in EVENTS.md.
 - **Gateway** exposes SMB/WebDAV/HTTP interfaces that appear as ordinary filesystems to applications.
-- **Storage Providers** (disks, USB, cloud, other MASH nodes) are registered with the system and advertised via capabilities.
+- **Storage Providers** (disks, USB, cloud, other MAS-H nodes) are registered with the system and advertised via capabilities.
