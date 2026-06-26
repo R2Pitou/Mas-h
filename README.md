@@ -37,23 +37,84 @@ SAMPO also provides the event infrastructure that lets the Staff communicate cle
 
 ```mermaid
 flowchart TB
+
     User["👤 User"]
 
-    Gateway["Gateway\nSMB • WebDAV • REST"]
-    SAMPO["SAMPO\nStorage Abstraction Management\n& Policy Orchestrator"]
+    Gateway["Gateway
 
-    Tuoni["Tuoni\nReasoning Engine\n• User Intent\n• Policies\n• System State\n• Planning"]
-    Seshat["Seshat\nKnowledge Catalogue\n• Objects\n• Relationships\n• Versions\n• Copies\n• Health\n• Provenance\n• Policies\n• Intent\n• History"]
-    Boatman["Boatman\nMoves Objects\n• Replication\n• Migration\n• Archive\n• Cache"]
-    Observer["Observer\nPublishes Events\n• Filesystem Changes\n• USB Added/Removed\n• Git Updates\n• Cloud Changes\n• Provider Status"]
-    Caretaker["Caretaker\nMaintenance\n• Hash Verification\n• Deduplication\n• Replica Repair\n• Thumbnails\n• Semantic Indexing\n• Archive Promotion/Demotion"]
+SMB • WebDAV • REST"]
 
-    Storage["Storage Providers\nSSD\nHDD\nUSB\nGitHub\nCloud\nOther MAS-H Nodes"]
+    SAMPO["SAMPO
+
+Storage Abstraction Management
+& Policy Orchestrator"]
+
+    Tuoni["Tuoni
+
+Reasoning Engine
+
+User Intent
+Policies
+System State
+Planning"]
+
+    Seshat["Seshat
+
+Knowledge Catalogue
+
+Objects
+Relationships
+Versions
+Copies
+Health
+Provenance
+Policies
+Intent
+History"]
+
+    Boatman["Boatman
+
+Moves Objects
+
+Replicate
+Migrate
+Archive
+Cache"]
+
+    Observer["Observer
+
+Publishes Events
+
+Filesystem
+USB
+Git
+Cloud
+Providers"]
+
+    Caretaker["Caretaker
+
+Maintenance
+
+Hash Verification
+Deduplication
+Replica Repair
+Semantic Indexing
+Archive & Cache"]
+
+    Storage["Storage Providers
+
+SSD
+HDD
+USB
+GitHub
+Cloud
+Other MAS-H Nodes"]
 
     User --> Gateway
     Gateway --> SAMPO
 
     Observer --> SAMPO
+    Observer --> Storage
 
     SAMPO --> Tuoni
     SAMPO --> Seshat
@@ -65,7 +126,6 @@ flowchart TB
     Tuoni --> Caretaker
 
     Boatman --> Storage
-    Observer --> Storage
     Caretaker --> Storage
 ```
 
