@@ -42,11 +42,11 @@ flowchart TB
     Gateway["Gateway\nSMB • WebDAV • REST"]
     SAMPO["SAMPO\nStorage Abstraction Management\n& Policy Orchestrator"]
 
-    Tuoni["Tuoni\nReasoning Engine"]
-    Seshat["Seshat\nCatalogue\nObjects \n• Relationships \n• Versions \n• Copies \n• Health \n• Provenance \n• Policies \n• Intent \n• History"]
-    Boatman["Boatman\nMoves Objects"]
-    Observer["Observer\nPublishes Events"]
-    Caretaker["Caretaker\nMaintenance"]
+    Tuoni["Tuoni\nReasoning Engine\n• User Intent\n• Policies\n• System State\n• Planning"]
+    Seshat["Seshat\nKnowledge Catalogue\n• Objects\n• Relationships\n• Versions\n• Copies\n• Health\n• Provenance\n• Policies\n• Intent\n• History"]
+    Boatman["Boatman\nMoves Objects\n• Replication\n• Migration\n• Archive\n• Cache"]
+    Observer["Observer\nPublishes Events\n• Filesystem Changes\n• USB Added/Removed\n• Git Updates\n• Cloud Changes\n• Provider Status"]
+    Caretaker["Caretaker\nMaintenance\n• Hash Verification\n• Deduplication\n• Replica Repair\n• Thumbnails\n• Semantic Indexing\n• Archive Promotion/Demotion"]
 
     Storage["Storage Providers\nSSD\nHDD\nUSB\nGitHub\nCloud\nOther MAS-H Nodes"]
 
