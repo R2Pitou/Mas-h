@@ -2,7 +2,7 @@
 
 ## Memory Abstraction Storage Hypervisor
 
-## Storage Hypervisor with a Digital Librarian control plane
+### Storage Hypervisor with a Digital Librarian control plane
 
 MAS‑H abstracts heterogeneous storage providers and presents a unified library of objects, projects, and relationships to users. It preserves existing files, reduces human cognitive load, and orchestrates existing tools (Everything, Syncthing, Git, etc.) rather than replacing them.
 
