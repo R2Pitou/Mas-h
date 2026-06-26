@@ -1,11 +1,12 @@
 # MAS-H
+
 ## Memory Abstraction Storage Hypervisor
 
 > A Storage Hypervisor with a Digital Librarian control plane.
 
 MAS-H abstracts heterogeneous storage providers and presents a unified library of objects, projects, and relationships to users. It preserves existing files, reduces human cognitive load, and orchestrates existing tools (Everything, Syncthing, Git, etc.) rather than replacing them.
 
-**Manifesto**
+## Manifesto
 
 Modern operating systems ask users to remember where information is stored.
 
@@ -86,6 +87,7 @@ flowchart TB
 - MAS-H never makes data less accessible.
 - Existing open-source tools are orchestrated, not replaced.
 - Optimise human time before machine time.
+
 ## Documentation
 
 - [VISION.md](VISION.md)
@@ -103,4 +105,3 @@ flowchart TB
 ## Getting Started
 
 Read the individual documents to understand the vision, architecture, terminology, and design decisions before any code is written.
-
